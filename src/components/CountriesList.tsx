@@ -1,3 +1,4 @@
+/*************  ✨ Codeium Command 🌟  *************/
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -23,7 +24,7 @@ export default function CountriesList({ countries, onSelectCountry }: Props) {
         zIndex: 'auto'
       }}
     >
-      <Box sx={{ width: 300 }} role="presentation">
+      <Box sx={{ width: 280 }} role="presentation">
         <List>
           {countries.map((country) => (
             <ListItem button key={country.alpha3Code} onClick={() => onSelectCountry(country.alpha3Code)}>
@@ -35,3 +36,5 @@ export default function CountriesList({ countries, onSelectCountry }: Props) {
     </Drawer>
   );
 }
+
+/******  e06cda97-36fb-464c-abb2-70a003624fc4  *******/
